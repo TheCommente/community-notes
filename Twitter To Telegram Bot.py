@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 import chromedriver_autoinstaller
 
 # Load environment variables
-load_dotenv(r"C:\mybot\telebot.env")
+load_dotenv(r"YOUR.env PATH")
 
 # Twitter credentials
 username = os.getenv('USERNAME')
