@@ -1,0 +1,41 @@
+// index.html
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ממיר ציוצים לקהילה</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ממיר ציוצים לקהילה</h1>
+            <p class="subtitle">המרת כל קישור לציוץ לעמוד הערות הקהילה שלו</p>
+        </div>
+
+        <div class="input-container">
+            <input 
+                type="text" 
+                id="tweetUrl" 
+                placeholder="הדבק/י כאן את כתובת הציוץ (לדוגמה: https://twitter.com/user/status/123456)"
+            >
+            <button id="convertButton">המר</button>
+        </div>
+
+        <div id="errorMessage" class="error-message hidden"></div>
+
+        <div id="resultContainer" class="result-container hidden">
+            <h2>כתובת מומרת:</h2>
+            <div class="url-container">
+                <a id="convertedUrl" target="_blank" rel="noopener noreferrer"></a>
+                <svg class="external-link-icon" viewBox="0 0 24 24" width="16" height="16">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
